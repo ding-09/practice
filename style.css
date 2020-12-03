@@ -1,0 +1,167 @@
+/* global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+li {
+  font-size: 1.8rem;
+  font-weight: 400;
+  list-style: none;
+}
+
+button {
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 10rem;
+  border: none;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(0, 200, 5);
+}
+/* main header section  */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9vh;
+  padding: 0 2rem;
+  box-shadow: 0 1px 5px #a5a5a5;
+  position: relative;
+}
+
+.main-header h1 {
+  font-weight: 400;
+}
+
+.main-header h1::after {
+  content: '\f56b';
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+.nav-bar {
+  flex-grow: 1;
+}
+
+.nav-bar ul {
+  display: flex;
+  margin-left: 5rem;
+}
+
+.nav-bar li {
+  padding: 2rem;
+  margin-right: 3rem;
+  position: relative;
+}
+
+.products::after,
+.learn::after {
+  content: '\25BE';
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+}
+
+.main-header .buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25rem;
+  height: 10rem;
+}
+
+.login-btn {
+  background: #ffffff;
+}
+
+.login-btn:hover,
+.nav-bar a:hover {
+  color: rgb(0, 200, 5);
+}
+
+.signup-btn {
+  width: 15rem;
+  height: 5rem;
+  background-color: rgb(0, 200, 5);
+}
+
+.signup-btn:hover {
+  background-color: rgb(46, 163, 50);
+}
+
+/* dropdown style */
+.dropdowns {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  height: 9vh;
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px -5px #a5a5a5;
+  font-weight: 300;
+  display: none;
+}
+
+.products-dropdown {
+  width: 50%;
+  margin-left: 24rem;
+  height: 100%;
+  align-items: center;
+  display: none;
+  border: none;
+}
+
+.products-dropdown li {
+  margin-right: 3rem;
+}
+
+#cash-mgt {
+  border-right: 1px solid rgb(0, 0, 0);
+  padding-right: 2.5rem;
+}
+
+#crypto a {
+  color: rgb(218, 65, 107);
+}
+
+#learn-dropdown {
+  height: 100%;
+  align-items: center;
+  width: 10%;
+  margin-left: 38.5rem;
+  display: none;
+}
+
+#learn-dropdown li {
+  margin-right: 3rem;
+}
+
+/* hero section */
+
+.hero {
+  background-color: rgb(195, 245, 60);
+  min-height: 91vh;
+}
