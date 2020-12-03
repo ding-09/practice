@@ -5,10 +5,14 @@ const learnDropdown = document.querySelector('#learn-dropdown');
 
 const mainHeader = document.querySelector('.main-header');
 
-mainHeader.addEventListener('click', (e) => {
+window.addEventListener('click', (e) => {
   if (e.target.classList.contains('products')) {
     if (learnDropdown.style.display == 'flex') {
       learnDropdown.style.display = 'none';
+    } else if (productsDropdown.style.display == 'flex') {
+      dropdowns.style.display = 'none';
+      productsDropdown.style.display = 'none'
+      return;
     }
     dropdowns.style.display = 'block';
     productsDropdown.style.display = 'flex';
@@ -18,5 +22,11 @@ mainHeader.addEventListener('click', (e) => {
     }
     dropdowns.style.display = 'block';
     learnDropdown.style.display = 'flex';
-  } 
+  } else {
+    dropdowns.style.display = 'none';
+    productsDropdown.style.display = 'none';
+    learnDropdown.style.display = 'none';
+  }
 });
+
+
